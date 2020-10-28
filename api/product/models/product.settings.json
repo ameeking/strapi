@@ -11,26 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Name": {
-      "type": "string"
-    },
-    "Description": {
-      "type": "text"
-    },
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "categories": {
       "collection": "category",
       "via": "product"
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }
