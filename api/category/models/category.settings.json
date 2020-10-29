@@ -16,9 +16,13 @@
       "required": true,
       "unique": true
     },
-    "product": {
+    "products": {
+      "collection": "product",
       "via": "categories",
-      "model": "product"
+      "dominant": true
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
